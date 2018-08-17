@@ -1,0 +1,74 @@
+.footer {
+    background-color: $color-secondary;
+    padding: 50px 0 20px 0;
+
+    &__logo {
+        text-align: center;
+    }
+
+    &__upper {
+        margin-top: 80px;
+
+        &-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        &-item {
+            flex-basis: 33.3333%;
+            max-width: 33.3333%;
+            padding: 0 15px;
+
+            .title {
+                margin: 0 0 50px 0;
+                font-size: 32px;
+                font-family: $font-secondary;
+            }
+
+            .text {
+                font-size: 20px;
+                margin: 0;
+                line-height: 1.6;
+
+                li {
+                    line-height: 1.6;
+                }
+
+            }
+
+            &:nth-child(1) {
+
+            }
+
+            &:nth-child(2) {
+                text-align: center;
+            }
+
+            &:nth-child(3) {
+                text-align: right;
+            }
+
+        }
+        
+    }
+
+    &__lower {
+        margin-top: 80px;
+        font-size: 14px;
+        color: white;
+
+        &-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+        }
+
+        &-item {
+            padding: 0 15px;
+        }
+
+    }
+
+}

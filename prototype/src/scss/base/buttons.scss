@@ -1,0 +1,45 @@
+.btn {
+	position: relative;
+	display: inline-block;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none!important;
+		outline: none!important;
+
+		* {
+			text-decoration: none!important;
+			outline: none!important;
+		}
+
+	}
+
+	&__default {
+		text-align: center;
+		font-size: 58px;
+		font-weight: 700;
+		line-height: 1;
+		text-decoration: none;
+		padding: 40px 60px 30px;
+		color: white;
+		text-transform: uppercase;
+
+		@media(max-width: 1200px) {
+			font-size: 40px;
+			padding: 28px 40px 25px;
+		}
+		
+		@media(max-width: 767px) {
+			font-size: 29px;
+			padding: 20px 40px 17px;
+		}
+
+		// &:hover {
+		// 	color: $color-light;
+		// }
+
+	}
+
+}

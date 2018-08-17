@@ -1,0 +1,16 @@
+$color-primary: #232323;
+$color-secondary: #D3D6D6;
+$color-tertiary: #3E8781; // #468966 
+$color-light: #F8F8F8;
+$color-dark: #445878;
+$color-darker: #31353D;
+$color-grey1: #ebebeb;
+$color-grey2: #b1b1b1;
+$color-grey3: #555555;
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Alex Brush', cursive;
+
+@mixin shadow() {
+    box-shadow: 3px 3px 10px 0 rgba($color: #000000, $alpha: 0.3);
+}
