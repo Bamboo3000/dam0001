@@ -1,0 +1,23 @@
+.half {
+
+    &__container {
+        padding: 40px 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    &__text {
+        flex-basis: 45%;
+        max-width: 45%;
+        padding: 40px;
+    }
+
+    &__img {
+        flex-basis: 55%;
+        max-width: 55%;
+        padding: 0 40px;
+    }
+
+}

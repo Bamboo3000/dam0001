@@ -36,6 +36,24 @@
 
             }
 
+            .socials {
+                margin-top: 20px;
+
+                a {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                    background-color: $color-tertiary;
+                    color: white;
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-size: 21px;
+                }
+
+            }
+
             &:nth-child(1) {
 
             }
@@ -55,7 +73,7 @@
     &__lower {
         margin-top: 80px;
         font-size: 14px;
-        color: white;
+        color: $color-primary;
 
         &-container {
             display: flex;
