@@ -7,6 +7,14 @@
     &__references {
         padding: 40px;
 
+        &-title {
+            margin-bottom: 0;
+        }
+
+        &-subtitle {
+            margin-top: 0;
+        }
+
         &-carousel {
             color: white;
             background-color: $color-tertiary;
@@ -15,7 +23,7 @@
 
             span {
                 display: inline-block;
-                margin-top: 40px;
+                margin-top: 30px;
                 font-size: 24px;
                 font-family: $font-secondary;
             }
