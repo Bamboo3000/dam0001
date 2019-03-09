@@ -9,7 +9,7 @@ $color-grey2: #b1b1b1;
 $color-grey3: #555555;
 
 $font-primary: 'Lato', sans-serif;
-$font-secondary: 'Alex Brush', cursive;
+$font-secondary: 'Dancing Script', cursive;
 
 @mixin shadow() {
     box-shadow: 3px 3px 10px 0 rgba($color: #000000, $alpha: 0.3);
@@ -17,4 +17,8 @@ $font-secondary: 'Alex Brush', cursive;
 
 .bg-grey {
     background-color: $color-secondary;
+}
+
+.nopadding {
+    padding: 0!important;
 }

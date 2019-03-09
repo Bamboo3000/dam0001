@@ -96,26 +96,26 @@ hr {
 	overflow: hidden;
 }
 
-.container {
+.container-custom {
 	position: relative;
 	margin: 0 auto;
 	padding: 0 30px;
 	display: block;
-	max-width: 1660px;
+	max-width: 1600px;
 
 	@media(max-width: 1660px) {
-		max-width: 1500px;
+		max-width: 1400px;
 	}
 
-	@media(max-width: 1500px) {
-		max-width: 1340px;
+	@media(max-width: 1460px) {
+		max-width: 1300px;
 	}
 
-	@media(max-width: 1340px) {
+	@media(max-width: 1360px) {
 		max-width: 1140px;
 	}
 
-	@media(max-width: 1140px) {
+	@media(max-width: 1200px) {
 		max-width: 960px;
 	}
 
@@ -164,12 +164,16 @@ hr {
 	z-index: 9;
 }
 
+.text-left {
+	text-align: left!important;
+}
+
 .text-center {
-	text-align: center;
+	text-align: center!important;
 }
 
 .text-right {
-	text-align: right;
+	text-align: right!important;
 }
 
 .modal-open {

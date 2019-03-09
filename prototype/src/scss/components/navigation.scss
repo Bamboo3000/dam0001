@@ -1,5 +1,7 @@
 .navigation {
     padding: 0;
+    position: relative;
+    z-index: 99999999;
 
     &__container {
         display: flex;

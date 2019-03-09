@@ -1,0 +1,50 @@
+.kontakt {
+
+    &__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            outline: 0;
+            width: 128px;
+            height: 2px;
+            background-color: $color-tertiary;
+            margin: 20px auto 40px;
+            display: block;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: $color-tertiary;
+        }
+
+        .socials {
+
+            a {
+                width: 36px;
+                height: 36px;
+                border-radius: 36px;
+                line-height: 36px;
+                text-align: center;
+                background-color: $color-tertiary;
+                color: white;
+                display: inline-block;
+                margin-right: 10px;
+                font-size: 21px;
+                text-decoration: none!important;
+            }
+
+        }
+
+        .btn {
+            margin-top: 40px;
+        }
+
+    }
+
+}

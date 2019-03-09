@@ -5,7 +5,7 @@
         display: flex;
         flex-wrap: nowrap;
         align-content: center;
-        align-items: center;
+        //align-items: center;
     }
 
     &__text {
@@ -13,12 +13,13 @@
         max-width: 45%;
         padding: 40px;
 
-        ul.center {
-            max-width: 80%;
+        ul {
+            width: auto;
             text-align: left;
             display: inline-block;
             padding: 0;
             margin: 0 auto;
+            list-style: circle;
         }
 
     }
@@ -27,6 +28,11 @@
         flex-basis: 55%;
         max-width: 55%;
         padding: 0 40px;
+
+        img {
+            height: 100%;
+        }
+
     }
 
 }

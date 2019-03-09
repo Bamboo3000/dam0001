@@ -1,0 +1,45 @@
+.cennik {
+
+    &__container {
+        padding-top: 30px;
+        padding-bottom: 30px; 
+
+        hr {
+            border: none;
+            outline: 0;
+            width: 128px;
+            height: 2px;
+            background-color: $color-tertiary;
+            margin: 20px 0 30px;
+            display: block;
+
+            &.cennik {
+                height: 1px;
+                background-color: $color-grey2;
+                margin: 15px 0;
+            }
+
+        }
+
+        .row.cennik {
+            
+            > div {
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+
+        }
+
+    }
+
+    &-col {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        h4 {
+            margin: 20px 0 0 0;
+        }
+
+    }
+
+}
