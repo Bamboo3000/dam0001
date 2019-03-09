@@ -12,6 +12,15 @@
         flex-basis: 45%;
         max-width: 45%;
         padding: 40px;
+
+        ul.center {
+            max-width: 80%;
+            text-align: left;
+            display: inline-block;
+            padding: 0;
+            margin: 0 auto;
+        }
+
     }
 
     &__img {

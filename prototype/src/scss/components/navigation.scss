@@ -1,5 +1,5 @@
 .navigation {
-    padding: 15px 0 0 0;
+    padding: 0;
 
     &__container {
         display: flex;
@@ -10,6 +10,15 @@
     }
 
     &__logo {
+        border-radius: 100%;
+        background-color: white;
+        padding: 15px;
+        margin: -5px 0 -50px -15px;
+
+        object,
+        svg {
+            width: 230px;
+        }
 
     }
 
@@ -21,11 +30,12 @@
         li {
 
             a {
-                font-size: 22px;
-                letter-spacing: 1px;
+                font-size: 19px;
+                letter-spacing: 0.5px;
                 transition: all 250ms ease;
                 padding: 10px 20px;
                 display: block;
+                font-weight: 400;
             }
             
             &:hover,
@@ -33,6 +43,7 @@
 
                 a {
                     color: $color-tertiary;
+                    text-decoration: none;
                 }
 
             }
