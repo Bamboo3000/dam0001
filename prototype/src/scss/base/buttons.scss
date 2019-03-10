@@ -27,6 +27,10 @@
 		border: 2px solid $color-tertiary;
 		font-weight: 700;
 
+		@media(max-width: 768px) {
+			padding: 6px 24px;
+		}
+
 		&:hover {
 			color: $color-tertiary;
 			background-color: transparent;

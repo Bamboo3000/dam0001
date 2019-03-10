@@ -28,6 +28,15 @@
                 padding-bottom: 3px;
             }
 
+            .text-right {
+                white-space: nowrap;
+                padding-left: 0!important;
+            }
+
+            @media(max-width: 1200px) {
+                font-size: 16px!important;
+            }
+
         }
 
     }

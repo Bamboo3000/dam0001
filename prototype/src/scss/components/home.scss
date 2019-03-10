@@ -3,6 +3,10 @@
     &__references {
         padding: 40px;
 
+        @media(max-width: 1200px) {
+            padding: 20px;
+        }
+
         &-title {
             margin-bottom: 0;
         }
@@ -17,10 +21,24 @@
             padding: 40px;
             margin-top: 40px;
 
+            @media(max-width: 1200px) {
+                padding: 20px;
+                margin-top: 30px;
+            }
+
             .item {
                 max-width: 75%;
                 margin: 0 auto;
                 display: inline-block;
+
+                @media(max-width: 800px) {
+                    max-width: 90%;
+                }
+
+                @media(max-width: 575px) {
+                    max-width: 100%;
+                }
+
             }
 
             .owl-dots {
@@ -37,6 +55,15 @@
                 margin-top: 10px;
                 font-size: 30px;
                 font-family: $font-secondary;
+
+                @media(max-width: 1200px) {
+                    margin-top: 0;
+                }
+
+                @media(max-width: 800px) {
+                    font-size: 26px;
+                }
+
             }
 
         }
