@@ -1,0 +1,150 @@
+.galeria {
+
+    &__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &__item {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        cursor: pointer;
+
+        @media(max-width: 575px) {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+    }
+
+    &__modal {
+        display: none;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 50px 100px;
+        max-height: 100vh;
+        z-index: 999999999999999999999;
+
+        @media(max-width: 800px) {
+            padding: 30px 60px;
+        }
+
+        &.open {
+            display: flex!important;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            @media(max-width: 575px) {
+                display: none!important;
+            }
+
+        }
+
+        @media(max-width: 575px) {
+            display: none!important;
+        }
+
+        &-container {
+            position: relative;
+            display: block;
+
+            .owl-item {
+                
+                img {
+                    max-height: calc(100vh - 120px);
+                    width: auto;
+                    margin: 0 auto;
+
+                    @media(max-width: 800px) {
+                        max-height: calc(100vh - 60px);
+                    }
+
+                }
+
+            }
+
+            .owl-dots {
+                margin-top: 24px!important;
+
+                @media(max-width: 800px) {
+                    margin-top: 20px!important;
+                }
+
+                button {
+                    outline: 0!important;
+                }
+
+            }
+
+        }
+
+    }
+
+    &__close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+
+        @media(max-width: 800px) {
+            top: 16px;
+            right: 16px;
+        }
+
+        i {
+            font-size: 32px;
+            color: white;
+
+            @media(max-width: 800px) {
+                font-size: 24px;
+            }
+
+        }
+
+    }
+
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        margin-top: -26px;
+
+        @media(max-width: 800px) {
+            margin-top: -18px;
+        }
+
+        i {
+            font-size: 52px;
+            color: white;
+
+            @media(max-width: 800px) {
+                font-size: 36px;
+            }
+
+        }
+
+    }
+
+    &__prev {
+        left: 24px;
+
+        @media(max-width: 800px) {
+            left: 12px;
+        }
+
+    }
+
+    &__next {
+        right: 24px;
+
+        @media(max-width: 800px) {
+            right: 12px;
+        }
+
+    }
+
+}
