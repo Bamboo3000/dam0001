@@ -49,12 +49,25 @@
 
 	}
 
-	&__white {
+	&__color {
 
 		&:hover {
 			color: $color-tertiary;
 			background-color: white;
 			border: 2px solid white;
+		}
+
+	}
+
+	&__white {
+		color: $color-tertiary;
+		background-color: white;
+		border: 2px solid white;
+
+		&:hover {
+			color: white;
+			background-color: $color-tertiary;
+			border: 2px solid $color-tertiary;
 		}
 
 	}
