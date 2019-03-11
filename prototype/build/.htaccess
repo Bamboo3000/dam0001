@@ -73,7 +73,6 @@ ExpiresByType image/jpeg A2592000
     RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
 
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)\.html$ /$1 [L,R=301]
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 </IfModule>
