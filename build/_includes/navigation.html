@@ -1,0 +1,23 @@
+<nav class="navigation">
+    <div class="container-custom navigation__container">
+        <a href="/" class="navigation__logo">
+            <object type="image/svg+xml" data="assets/img/logo.svg">
+                <img src="assets/img/logo.png" alt="Logo salonu kosmetycznego Dama">
+            </object>
+        </a>
+        <ul class="navigation__menu">
+            {% for item in site.data.navigation %}
+                <li {% if page.url == item.link %}class="active"{% endif %}>
+                    <a href="{{ item.link }}">
+                        {{ item.name }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="menuOpen">
+            <span>MENU</span>
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>

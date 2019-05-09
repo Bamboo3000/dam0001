@@ -3,6 +3,7 @@
 /prototype/.sass-cache
 !/.gitignore
 /design
+/hugo
 .DS_Store
 /build/composer.lock
 /build/.cache

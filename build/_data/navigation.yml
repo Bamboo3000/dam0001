@@ -1,0 +1,10 @@
+- name: Strona główna
+  link: /
+- name: Oferta
+  link: /oferta
+- name: Cennik
+  link: /cennik
+- name: O mnie
+  link: /omnie
+- name: Kontakt
+  link: /kontakt

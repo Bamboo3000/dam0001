@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {% if page.meta_title %}
+            <title>{{ page.meta_title }}</title>
+        {% else %}
+            <title>{{ page.title }} | Salon kosmetyczny Dama</title>
+        {% endif %}
+        {% if page.meta_description %}
+            <meta name="description" content="{{ page.meta_description }}">
+        {% endif %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+        <noscript>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        </noscript>
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Lato:300,300i,400,400i,700&amp;subset=latin-ext" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+        <noscript>
+            <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Lato:300,300i,400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+        </noscript>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+        <noscript>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        </noscript>
+        <link rel="stylesheet" href="assets/css/prototype.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" media="none" onload="if(media!='all')media='all'"/>
+        <noscript>
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        </noscript>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" defer></script>
+        <script>
+            window.addEventListener("load", function(){
+                window.cookieconsent.initialise({
+                    "palette": {
+                        "popup": {
+                        "background": "#eaf7f7",
+                        "text": "#5c7291"
+                        },
+                        "button": {
+                        "background": "#56cbdb",
+                        "text": "#ffffff"
+                        }
+                    },
+                    "content": {
+                        "message": "Strona korzysta z plików cookies w celu realizacji usług i zgodnie z naszą polityką plików cookies.\nMożesz określić warunki przechowywania lub dostępu do plików cookies w Twojej przeglądarce.",
+                        "dismiss": "Rozumiem i zgadzam się",
+                        "link": "Nasza polityka plików cookies.",
+                        "href": "/cookies"
+                    }
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="wrapper">
+
+            {% include navigation.html %}
+
+            {{ content }}
+
+            {% include footer.html %}
+
+        </div> <!-- #wrapper end-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/js/app.js" defer></script>
+    </body>
+</html>

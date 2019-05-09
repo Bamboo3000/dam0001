@@ -117,6 +117,15 @@
 
             }
 
+            &.active {
+
+                a {
+                    color: $color-tertiary;
+                    text-decoration: underline;
+                }
+
+            }
+
         }
 
     }

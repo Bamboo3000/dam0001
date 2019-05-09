@@ -29,10 +29,10 @@ var src = {
     buildCss: './build/assets/css',
     buildImg: './build/assets/img',
     buildFonts: './build/assets/fonts',
-    portJs: '../build/themes/honest/assets/js',
-    portCss: '../build/themes/honest/assets/css',
-    portImg: '../build/themes/honest/assets/img',
-    portFonts: '../build/themes/honest/assets/fonts'
+    portJs: '../build/assets/js',
+    portCss: '../build/assets/css',
+    portImg: '../build/assets/img',
+    portFonts: '../build/assets/fonts'
 };
 
 var production = false;
@@ -66,7 +66,7 @@ gulp.task('build-sass', function() {
         .pipe(autoprefixer('last 10 versions'))
         .pipe(plugins.minifyCss())
         .pipe(gulp.dest(src.buildCss))
-        //.pipe(gulp.dest(src.portCss))
+        .pipe(gulp.dest(src.portCss))
 });
 
 /**
@@ -93,7 +93,7 @@ gulp.task('build-js', function () {
         .pipe(plugins.uglify())
         .pipe(plugins.size())
         .pipe(gulp.dest(src.buildJs))
-        //.pipe(gulp.dest(src.portJs))
+        .pipe(gulp.dest(src.portJs))
 });
 
 /**
@@ -121,7 +121,7 @@ gulp.task('sprite', function () {
 gulp.task('build-img', function() {
     return gulp.src([src.img + '/*', src.img + '/**/*'])
         .pipe(gulp.dest(src.buildImg))
-        //.pipe(gulp.dest(src.portImg))
+        .pipe(gulp.dest(src.portImg))
 });
 
 
@@ -132,7 +132,7 @@ gulp.task('build-img', function() {
 gulp.task('build-fonts', function() {
     return gulp.src([src.fonts + '/*', src.fonts + '/**/*'])
         .pipe(gulp.dest(src.buildFonts))
-        //.pipe(gulp.dest(src.portFonts))
+        .pipe(gulp.dest(src.portFonts))
 });
 
 
